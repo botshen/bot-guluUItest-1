@@ -9,3 +9,7 @@
 ```css
 * {box-sizing: border-box}
 ```
+## 运行
+```bash
+ npx parcel index.html --no-cache
+```
