@@ -46,8 +46,6 @@ export default {
     > .content { order: 1; }
     > .icon { order: 2; margin-right: 0; margin-left: .1em;}
   }
-  .loading {
-    animation: spin 2s infinite linear;
-  }
+  .loading {animation: spin 2s infinite linear;}
 }
 </style>
