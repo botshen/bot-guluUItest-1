@@ -9,11 +9,12 @@
   </button>
 </template>
 <script>
-import Icon from './icon'
+import Icon from "./icon"
 
 export default {
+  name: "GuluButton",
   components: {
-    'g-icon': Icon
+    "g-icon": Icon
   },
   props: {
     icon: {},
@@ -23,9 +24,9 @@ export default {
     },
     iconPosition: {
       type: String,
-      default: 'left',
+      default: "left",
       validator(value) {
-        return value === 'left' || value === 'right'
+        return value === "left" || value === "right"
       }
     }
   }
