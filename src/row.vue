@@ -5,29 +5,29 @@
 </template>
 <script>
 export default {
-  name: 'GuluRow',
+  name: "GuluRow",
   props: {
     gutter: {
       type: [Number, String]
     },
     align: {
       type: String,
-      validator (value) {
-        return ['left', 'right', 'center'].includes(value)
+      validator(value) {
+        return ["left", "right", "center"].includes(value)
       }
     }
   },
   computed: {
-    rowStyle () {
+    rowStyle() {
       let {gutter} = this
-      return {marginLeft: -gutter / 2 + 'px', marginRight: -gutter / 2 + 'px'}
+      return {marginLeft: -gutter / 2 + "px", marginRight: -gutter / 2 + "px"}
     },
-    rowClass () {
+    rowClass() {
       let {align} = this
       return [align && `align-${align}`]
     }
   },
-  mounted () {
+  mounted() {
     this.$children.forEach((vm) => {
       vm.gutter = this.gutter
     })
@@ -35,8 +35,9 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.row{
+.row {
   display: flex;
+  flex-wrap: wrap;
   &.align-left {
     justify-content: flex-start;
   }
