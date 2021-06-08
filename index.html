@@ -2,12 +2,15 @@
 <html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>轱辘</title>
     <style>
         * {margin: 0; padding: 0; box-sizing: border-box;}
+
         img {max-width: 100%;}
+
         html {
             --button-height: 32px;
             --font-size: 14px;
@@ -18,15 +21,17 @@
             --border-color: #999;
             --border-color-hover: #666;
         }
+
         #app {
             margin: 20px;
         }
+
         body {
             font-size: var(--font-size);
         }
     </style>
     <style>
-        .box{
+        .box {
             margin: 20px;
         }
     </style>
@@ -41,10 +46,9 @@
 </style>
 
 <div id="app">
-    <g-row>
-        <g-col span="23" offset="1" :narrow-pc="{span:12, offset:12}">
-            <div class="demo"></div>
-        </g-col>
+    <g-row gutter="20">
+        <g-col span="12"></g-col>
+        <g-col span="12"></g-col>
     </g-row>
 </div>
 <script src="./src/app.js"></script>
