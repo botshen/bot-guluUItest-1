@@ -10,7 +10,7 @@
 export default {
   name: 'GuluTabsHead',
   inject: ['eventBus'],
-  created () {
+  created() {
   }
 }
 </script>
@@ -20,8 +20,8 @@ $tab-height: 40px;
   display: flex;
   height: $tab-height;
   justify-content: flex-start;
-  align-items: center;
   border: 1px solid red;
+
   > .actions-wrapper {
     margin-left: auto;
   }
