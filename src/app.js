@@ -18,6 +18,8 @@ import TabsBody from './tabs-body'
 import TabsItem from './tabs-item'
 import TabsPane from './tabs-pane'
 import Popover from './popover'
+import Collapse from './collapse'
+import CollapseItem from './collapse-item'
 
 Vue.component('g-button', Button)
 Vue.component('g-icon', Icon)
@@ -38,6 +40,8 @@ Vue.component('g-tabs-body', TabsBody)
 Vue.component('g-tabs-item', TabsItem)
 Vue.component('g-tabs-pane', TabsPane)
 Vue.component('g-popover', Popover)
+Vue.component('g-collapse', Collapse)
+Vue.component('g-collapse-item', CollapseItem)
 
 import createElement from 'vue'
 
@@ -48,28 +52,28 @@ new Vue({
     data: {
         selectedTab: 'sports'
     },
-    created(){
+    created() {
     },
     methods: {
-        yyy(){
+        yyy() {
             console.log('yyy')
         },
-        showToast1(){
+        showToast1() {
             this.showToast('top')
         },
-        showToast2(){
+        showToast2() {
             this.showToast('middle')
         },
-        showToast3(){
+        showToast3() {
             this.showToast('bottom')
         },
-        showToast(position){
+        showToast(position) {
             this.$toast(`你的智商目前为 ${parseInt(Math.random() * 100)}。你的智商需要充值！`, {
                 position,
                 enableHtml: false,
                 closeButton: {
                     text: '已充值',
-                    callback () {
+                    callback() {
                         console.log('他说已经充值智商了')
                     }
                 },
