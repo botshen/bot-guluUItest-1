@@ -50,30 +50,30 @@ const h = createElement
 new Vue({
     el: '#app',
     data: {
-        selectedTab: 'sports'
+        selectedTab: '2'
     },
-    created() {
+    created(){
     },
     methods: {
-        yyy() {
+        yyy(){
             console.log('yyy')
         },
-        showToast1() {
+        showToast1(){
             this.showToast('top')
         },
-        showToast2() {
+        showToast2(){
             this.showToast('middle')
         },
-        showToast3() {
+        showToast3(){
             this.showToast('bottom')
         },
-        showToast(position) {
+        showToast(position){
             this.$toast(`你的智商目前为 ${parseInt(Math.random() * 100)}。你的智商需要充值！`, {
                 position,
                 enableHtml: false,
                 closeButton: {
                     text: '已充值',
-                    callback() {
+                    callback () {
                         console.log('他说已经充值智商了')
                     }
                 },
