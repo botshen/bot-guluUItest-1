@@ -20,6 +20,11 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:frankfang/frank-test-1.git master:gh-pages
-
+#git push -f git@github.com:botshen/gulu-Demo.git master:gh-pages
+git branch -M master &&
+git remote add origin git@github.com:botshen/gulu-Demo-website.git &&
+git push -f -u origin master &&
 cd -
+echo https://botshen.github.io/gulu-Demo-website/
+
+
