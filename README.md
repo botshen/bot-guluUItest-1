@@ -40,7 +40,7 @@ export default {
 ```
 ## 文档
 
-[前往官网](https://shenxin.space)
+[前往官网](https://botshen.github.io/gulu-Demo-website/)
 
 ## 联系方式
 
