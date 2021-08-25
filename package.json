@@ -9,7 +9,7 @@
     "test": "parcel build test/* --no-cache --no-minify && karma start --single-run",
     "start": "npx parcel index.html --no-cache",
     "build": "parcel build index.js --no-cache --no-minify",
-    "docs:dev": "vuepress dev docs",
+    "docs:dev": "vuepress dev docs ",
     "docs:build": "vuepress build docs"
   },
   "repository": {

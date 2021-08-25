@@ -7,7 +7,7 @@ title:快速上手
 ### npm 安装
 
 ```bash
-npm i ice-vue-ui -S
+npm i xin-vue-ui -S
 ```
 
 ### 开始使用
@@ -22,21 +22,21 @@ npm i ice-vue-ui -S
 
 IE 8及以上浏览器都支持此样式
 
-2. 引入 ice-vue-ui
+2. 引入 xin-vue-ui
 
 按需引入需要的组件，以达到减小项目体积的目的。
 
 需要注意的是，样式文件要记得引入。
 
 ```js
-import {Button, ButtonGroup, Icon} from 'ice-vue-ui'
-import 'ice-vue-ui/dist/index.css'
+import {Button, ButtonGroup, Icon} from 'xin-vue-ui'
+import 'xin-vue-ui/dist/index.css'
 
 export default {
   name: 'app',
   components: {
-    'i-button': Button,
-    'i-icon': Icon
+    'x-button': Button,
+    'x-icon': Icon
   }
 }
 ```
@@ -68,26 +68,26 @@ import {
     Collapse,
     CollapseItem
 
-} from 'ice-vue-ui'
+} from 'xin-vue-ui'
 
-Vue.component('i-button', Button)
-Vue.component('i-icon', Icon)
-Vue.component('i-button-group', ButtonGroup)
-Vue.component('i-input', Input)
-Vue.component('i-row',Row)
-Vue.component('i-col',Col)
-Vue.component('i-layout',Layout)
-Vue.component('i-header',Header)
-Vue.component('i-sider',Sider)
-Vue.component('i-content',Content)
-Vue.component('i-footer',Footer)
+Vue.component('x-button', Button)
+Vue.component('x-icon', Icon)
+Vue.component('x-button-group', ButtonGroup)
+Vue.component('x-input', Input)
+Vue.component('x-row',Row)
+Vue.component('x-col',Col)
+Vue.component('x-layout',Layout)
+Vue.component('x-header',Header)
+Vue.component('x-sider',Sider)
+Vue.component('x-content',Content)
+Vue.component('x-footer',Footer)
 Vue.use(plugin)                           // toast 组件的使用方法
-Vue.component('i-tabs',Tabs)
-Vue.component('i-tabs-head',TabsHead)
-Vue.component('i-tabs-body',TabsBody)
-Vue.component('i-tabs-item',TabsItem)
-Vue.component('i-tabs-pane',TabsPane)
-Vue.component('i-popover',Popover)
-Vue.component('i-collapse',Collapse)
-Vue.component('i-collapse-item',CollapseItem)
+Vue.component('x-tabs',Tabs)
+Vue.component('x-tabs-head',TabsHead)
+Vue.component('x-tabs-body',TabsBody)
+Vue.component('x-tabs-item',TabsItem)
+Vue.component('x-tabs-pane',TabsPane)
+Vue.component('x-popover',Popover)
+Vue.component('x-collapse',Collapse)
+Vue.component('x-collapse-item',CollapseItem)
 ```

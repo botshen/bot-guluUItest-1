@@ -10,7 +10,7 @@
     <x-popover>
       <x-button>上方弹出</x-button>
       <template slot="content">
-        <a href="https://github.com/botshen/gulu-Demo>这是个a链接</a>
+        <a href="https://github.com/botshen">这是个a链接</a>
       </template>
     </x-popover>
     <x-popover position="bottom">
