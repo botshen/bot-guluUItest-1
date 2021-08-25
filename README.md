@@ -1,7 +1,7 @@
 # Ice-UI
 
-[![Build Status](https://travis-ci.org/Orange-ice/Ice-UI.svg?branch=master)](https://travis-ci.org/Orange-ice/Ice-UI)
-![npm](https://img.shields.io/npm/v/ice-vue-ui)
+[![Build Status](https://travis-ci.org/botshen/gulu-Demo.svg?branch=master)](https://travis-ci.org/botshen/gulu-Demo)
+![npm](https://img.shields.io/npm/v/xin-vue-ui)
 ## 介绍
 
 鑫 UI 是一个基于 Vue 的 UI 组件库，目前包括有 Button、Tabs、Input、Grid、
@@ -28,14 +28,14 @@ npm i --save xin-vue-ui
 3. 引入 xin-vue-ui
 
 ```js
-import {Button, ButtonGroup, Icon} from 'ice-vue-ui'
-import 'ice-vue-ui/dist/index.css'
+import {Button, ButtonGroup, Icon} from 'xin-vue-ui'
+import 'xin-vue-ui/dist/index.css'
 
 export default {
    name: 'app',
    components: {
-      'i-button': Button,
-      'i-icon': Icon
+      'x-button': Button,
+      'x-icon': Icon
    }
 }
 ```

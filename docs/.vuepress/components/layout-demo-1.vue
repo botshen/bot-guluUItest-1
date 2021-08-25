@@ -1,59 +1,31 @@
 <template>
   <div style="padding-top: 16px;">
-    <h2>布局</h2>
-    <p>
-      <strong>预览</strong>
-    </p>
-
-    <g-layout style="color: white; margin-bottom:50px;">
-      <g-header style="height: 50px; background:lightskyblue;">
+    <x-layout style="color: white; margin-bottom:50px;">
+      <x-header style="height: 50px; background:#9E91F2;">
         header
-      </g-header>
-      <g-content style="height: 100px; background:deepskyblue;">
+      </x-header>
+      <x-content style="height: 100px; background:#7B62D9;">
         content
-      </g-content>
-      <g-footer style="height: 50px; background:lightskyblue;">
+      </x-content>
+      <x-footer style="height: 50px; background:#9E91F2;">
         footer
-      </g-footer>
-    </g-layout>
-
-    <p>
-      <strong>代码</strong>
-    </p>
-    <pre><code>{{content}}</code></pre>
+      </x-footer>
+    </x-layout>
   </div>
 </template>
 <style scoped>
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
 </style>
 <script>
-  import GLayout from '../../../src/layout'
-  import GHeader from '../../../src/header'
-  import GFooter from '../../../src/footer'
-  import GContent from '../../../src/content'
-  import GSider from '../../../src/sider'
+import XLayout from '../../../src/layout'
+import XHeader from '../../../src/header'
+import XFooter from '../../../src/footer'
+import XContent from '../../../src/content'
+import XSider from '../../../src/sider'
 
-  export default {
-    components: {GLayout, GHeader, GFooter, GContent, GSider},
-    data () {
-      return {
-        content: `
-          <g-layout style="color: white; margin-bottom:50px;">
-            <g-header style="height: 50px; background:lightskyblue;">
-              header
-            </g-header>
-            <g-content style="height: 100px; background:deepskyblue;">
-              content
-            </g-content>
-            <g-footer style="height: 50px; background:lightskyblue;">
-              footer
-            </g-footer>
-          </g-layout>
-
-      `.replace(/^ {8}/gm, '').trim()
-      }
-    }
-  }
+export default {
+  components: {XLayout, XHeader, XFooter, XContent, XSider},
+}
 </script>

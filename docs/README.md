@@ -1,28 +1,16 @@
 ---
-title: 介绍
+home: true
+heroImage: /hero.jpg
+heroText: Ice-UI
+tagline: 一个基于Vue的 UI 组件库
+actionText: 快速上手 →
+actionLink: /get-started/
+features:
+- title: 简洁至上
+  details: 以简洁易上手为中心思想，以简易的配置帮助你构建项目。
+- title: Vue驱动
+  details: Vue是一套用于构建用户界面的渐进式JavaScript框架，目前绝大部分前端人员都在使用。
+- title: 持续集成
+  details: 项目在构建之时坚持给每个组件写测试，并通过 Travis-CI 做了持续集成，保证了项目的高质量。
+footer: MIT Licensed | Copyright © 2020-present Burt
 ---
-
-[![Build Status](https://travis-ci.org/Orange-ice/Ice-UI.svg?branch=master)](https://travis-ci.org/Orange-ice/Ice-UI)
-![npm](https://img.shields.io/npm/v/ice-vue-ui)
-
-# 介绍
-
-### 开发目的
-
-造轮子其实就是一种学习，这是我在学习Vue过程中开发的一个简单的UI框架，
-希望对你有所帮助。
-
-### 基本信息
-
-鑫 UI 是一个基于 Vue 的 UI 组件库，目前包括有 Button、Tabs、Input、Grid、
-Layout、Toast、Collapse、Popover 组件。项目尚未完工，持续更新中。
-
-鑫 UI 是个人学习过程中造出来的UI库，如果你在使用过程中发现问题，
-非常感谢你提出宝贵意见。
-PS：目前项目属于开发中，暂不建议在生产项目中使用。
-
-### 作者
-
-- 沈鑫
-- 联系方式：bot_ab(wechat) ，欢迎交流学习
-- [Github](https://github.com/botshen/gulu-Demo)

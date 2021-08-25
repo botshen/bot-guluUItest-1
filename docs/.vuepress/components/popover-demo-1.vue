@@ -1,88 +1,43 @@
 <template>
   <div style="padding-top: 16px;">
-    <h2>支持 HTML</h2>
-    <p>
-      <strong>预览</strong>
-    </p>
 
-    <g-popover>
-      <g-button>上方弹出</g-button>
+    <x-popover position="left">
+      <x-button>左边弹出</x-button>
       <template slot="content">
-        弹出内容
+        <strong style="color: #F1453D">加粗的提示</strong>
       </template>
-    </g-popover>
-    <g-popover position="bottom">
-      <g-button>下方弹出</g-button>
+    </x-popover>
+    <x-popover>
+      <x-button>上方弹出</x-button>
       <template slot="content">
-        弹出内容
+        <a href="https://github.com/botshen/gulu-Demo>这是个a链接</a>
       </template>
-    </g-popover>
-    <g-popover position="left">
-      <g-button>左边弹出</g-button>
+    </x-popover>
+    <x-popover position="bottom">
+      <x-button>下方弹出</x-button>
       <template slot="content">
-        弹出内容
+        普通文本内容
       </template>
-    </g-popover>
-    <g-popover position="right">
-      <g-button>右边弹出</g-button>
+    </x-popover>
+    <x-popover position="right">
+      <x-button>右边弹出</x-button>
       <template slot="content">
-        弹出内容
+        普通文本内容
       </template>
-    </g-popover>
+    </x-popover>
 
-    <p>
-      <strong>代码</strong>
-    </p>
-    <pre><code>{{content}}</code></pre>
   </div>
 </template>
-<style>
-</style>
-<style scoped>
-</style>
+
 <script>
-  import GButton from '../../../src/button'
-  import GPopover from '../../../src/popover'
-
-
-  export default {
-    components: {GButton, GPopover},
-    data () {
-      return {
-        content: `
-          <g-popover>
-            <g-button>上方弹出</g-button>
-            <template slot="content">
-              弹出内容
-            </template>
-          </g-popover>
-          <g-popover position="bottom">
-            <g-button>下方弹出</g-button>
-            <template slot="content">
-              弹出内容
-            </template>
-          </g-popover>
-          <g-popover position="left">
-            <g-button>左边弹出</g-button>
-            <template slot="content">
-              弹出内容
-            </template>
-          </g-popover>
-          <g-popover position="right">
-            <g-button>右边弹出</g-button>
-            <template slot="content">
-              弹出内容
-            </template>
-          </g-popover>
-      `.replace(/^ {8}/gm, '').trim()
-      }
-    },
-    methods: {
-      onClickButton () {
-        this.$toast('<strong style="color:red;">加粗的提示</strong>', {
-          enableHtml: true
-        })
-      }
-    },
-  }
+import XButton from '../../../src/button'
+import XPopover from '../../../src/popover'
+export default {
+  components: {XButton, XPopover},
+}
 </script>
+<style>
+.ice-popover{
+  z-index: 30;
+}
+</style>

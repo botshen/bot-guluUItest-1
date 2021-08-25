@@ -5,6 +5,7 @@
            @input="$emit('input', $event.target.value)"
            @focus="$emit('focus', $event.target.value)"
            @blur="$emit('blur', $event.target.value)"
+           :placeholder="placeholder"
     >
     <template v-if="error">
       <icon name="error" class="icon-error"></icon>
@@ -20,6 +21,9 @@ export default {
   components: {Icon},
   name: 'GuluInput',
   props: {
+    placeholder:{
+      type:String
+    },
     value: {
       type: String,
     },

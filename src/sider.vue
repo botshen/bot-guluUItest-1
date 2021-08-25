@@ -2,13 +2,13 @@
   <transition name="slide">
     <div class="sider" v-if="visible">
       <slot></slot>
-      <button @click="visible = false">close</button>
+<!--      <button @click="visible = false">close</button>-->
     </div>
   </transition>
 </template>
 <script>
 export default {
-  name: "GuluSider",
+  name: "XINSider",
   data() {
     return {
       visible: true,

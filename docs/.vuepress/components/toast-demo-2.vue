@@ -1,18 +1,12 @@
 <template>
   <div style="padding-top: 16px;">
-    <h2>设置关闭按钮</h2>
-    <p>
-      <strong>预览</strong>
-    </p>
+
 
     <div>
       <g-button @click="onClickButton">上方弹出</g-button>
     </div>
 
-    <p>
-      <strong>代码</strong>
-    </p>
-    <pre><code>{{content}}</code></pre>
+
   </div>
 </template>
 <style>
