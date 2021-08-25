@@ -1,33 +1,28 @@
-# 轱辘 UI
+---
+title: 介绍
+---
 
-轱辘 UI 是一个不太一样的 UI 框架。
+[![Build Status](https://travis-ci.org/Orange-ice/Ice-UI.svg?branch=master)](https://travis-ci.org/Orange-ice/Ice-UI)
+![npm](https://img.shields.io/npm/v/ice-vue-ui)
 
-本 UI 框架是一个「面向源码阅读者」的框架。
+# 介绍
 
+### 开发目的
 
-1. 你可以通过查看逐个 commit 来学习本框架的制作思路
+造轮子其实就是一种学习，这是我在学习Vue过程中开发的一个简单的UI框架，
+希望对你有所帮助。
 
+### 基本信息
 
-本 UI 框架是基于 Vue 2 实现的。
+鑫 UI 是一个基于 Vue 的 UI 组件库，目前包括有 Button、Tabs、Input、Grid、
+Layout、Toast、Collapse、Popover 组件。项目尚未完工，持续更新中。
 
-注意：本 UI 框架的代码尚未完全完工（目前代码大概完成 50%），请不要在生产环境中使用本 UI 框架。
+鑫 UI 是个人学习过程中造出来的UI库，如果你在使用过程中发现问题，
+非常感谢你提出宝贵意见。
+PS：目前项目属于开发中，暂不建议在生产项目中使用。
 
+### 作者
 
-这一次为了顺应前端的潮流，我直接采用 Vue 2 来造轮子。如果你正在学习 Vue 2，那么轱辘 UI 的源码会非常适合你阅读。
-
-## 项目特点
-
-1. 使用 Travis CI 进行持续集成
-3. 自说明的代码，即使没有注释，你也能看懂
-
-
-
-## 视觉稿
-
-本 UI 框架借鉴了一些成熟 UI 框架（如 Framework7、Element UI 和 Ant Design）的外观，简化之后我自己制作了一个[视觉稿](https://www.yuque.com/u29422/gulu/artboards/22283)。
-
-如果你发现视觉稿有什么不足的地方，可以直接在上面留言，我也会看到。
-
-## 为什么叫轱辘UI
-
-因为轱辘就是「轮子」的意思。
+- 沈鑫
+- 联系方式：bot_ab(wechat) ，欢迎交流学习
+- [Github](https://github.com/botshen/gulu-Demo)
