@@ -1,9 +1,9 @@
 <template>
   <div style="padding-top: 16px;">
 
-    <g-button>默认按钮</g-button>
-    <g-button icon="settings">默认按钮</g-button>
-    <g-button :loading="true">默认按钮</g-button>
+    <x-button>默认按钮</x-button>
+    <x-button icon="settings">默认按钮</x-button>
+    <x-button :loading="true">默认按钮</x-button>
 
 
   </div>
@@ -13,15 +13,15 @@
 
   export default {
     components: {
-      'g-button': Button
+      'x-button': Button
     },
     data () {
       return {
         content: `
-          <g-button>默认按钮</g-button>
-          <g-button icon="settings">默认按钮</g-button>
-          <g-button :loading="true">默认按钮</g-button>
-          <g-button disabled>默认按钮</g-button>
+          <x-button>默认按钮</x-button>
+          <x-button icon="settings">默认按钮</x-button>
+          <x-button :loading="true">默认按钮</x-button>
+          <x-button disabled>默认按钮</x-button>
       `.replace(/^ {8}/gm, '').trim()
       }
     }

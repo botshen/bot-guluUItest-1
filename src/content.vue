@@ -1,11 +1,11 @@
 <template>
-  <div class="gulu-content">
+  <div class="x-content">
     <slot></slot>
   </div>
 </template>
 
 <style lang="scss" scoped>
-  .gulu-content {
+  .x-content {
     flex-grow: 1;
   }
 </style>
