@@ -1,36 +1,54 @@
 <template>
-  <div style="padding-top: 16px;">
+  <div style="margin-top: 10px">
+    <div>
+      <x-tabs :selected="selected1">
+        <x-tabs-head>
+          <x-tabs-item name="1">标题一</x-tabs-item>
+          <x-tabs-item name="2">标题二</x-tabs-item>
+        </x-tabs-head>
+        <x-tabs-body>
+          <x-tabs-pane name="1">内容1</x-tabs-pane>
+          <x-tabs-pane name="2">内容2</x-tabs-pane>
+        </x-tabs-body>
+      </x-tabs>
+    </div>
+
+    <div style="margin-top: 20px">
+      <x-tabs :selected="selected2">
+        <x-tabs-head>
+          <x-tabs-item name="1">标题一</x-tabs-item>
+          <x-tabs-item disabled name="2">标题二</x-tabs-item>
+          <x-tabs-item name="3">标题三</x-tabs-item>
+        </x-tabs-head>
+        <x-tabs-body>
+          <x-tabs-pane name="1">内容1</x-tabs-pane>
+          <x-tabs-pane name="2">内容2</x-tabs-pane>
+          <x-tabs-pane name="3">内容3</x-tabs-pane>
+        </x-tabs-body>
+      </x-tabs>
+    </div>
   </div>
 </template>
 <script>
-  import GTabs from '../../../src/tabs'
-  import GTabsBody from '../../../src/tabs-body'
-  import GTabsHead from '../../../src/tabs-head'
-  import GTabsItem from '../../../src/tabs-item'
-  import GTabsPane from '../../../src/tabs-pane'
+import Tabs from '../../../src/tabs'
+import TabsHead from '../../../src/tabs-head'
+import TabsBody from '../../../src/tabs-body'
+import TabsItem from '../../../src/tabs-item'
+import TabsPane from '../../../src/tabs-pane'
 
-  export default {
-    components: {GTabs, GTabsBody, GTabsHead, GTabsItem, GTabsPane},
-    data () {
-      return {
-        selected: '1',
-        content: `
-          data:{
-            selected: '1'
-          }
-
-          <g-tabs :selected="selected">
-            <g-tabs-head>
-              <g-tabs-item name="1">1</g-tabs-item>
-              <g-tabs-item name="2">2</g-tabs-item>
-            </g-tabs-head>
-            <g-tabs-body>
-              <g-tabs-pane name="1">content 1</g-tabs-pane>
-              <g-tabs-pane name="2">content 2</g-tabs-pane>
-            </g-tabs-body>
-          </g-tabs>
-      `.replace(/^ {8}/gm, '').trim()
-      }
+export default {
+  data() {
+    return {
+      selected1: '1',
+      selected2: '1'
     }
+  },
+  components: {
+    'x-tabs': Tabs,
+    'x-tabs-head': TabsHead,
+    'x-tabs-body': TabsBody,
+    'x-tabs-item': TabsItem,
+    'x-tabs-pane': TabsPane,
   }
+}
 </script>

@@ -14,9 +14,9 @@ title: Button 按钮
 #### 示例代码：
 
 ```vue
-<i-button>默认按钮</i-button>
-<i-button icon="settings">默认按钮</i-button>
-<i-button :loading="loading" @click="loading=!loading">默认按钮</i-button>
+<x-button>默认按钮</x-button>
+<x-button icon="settings">默认按钮</x-button>
+<x-button :loading="loading" @click="loading=!loading">默认按钮</x-button>
 ```
 
 # Attributes
