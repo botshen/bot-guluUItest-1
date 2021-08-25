@@ -1,7 +1,6 @@
 # Ice-UI
 
 [![Build Status](https://travis-ci.org/botshen/gulu-Demo.svg?branch=master)](https://travis-ci.org/botshen/gulu-Demo)
-![npm](https://img.shields.io/npm/v/xin-vue-ui)
 ## 介绍
 
 鑫 UI 是一个基于 Vue 的 UI 组件库，目前包括有 Button、Tabs、Input、Grid、
